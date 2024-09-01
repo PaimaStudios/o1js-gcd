@@ -1,0 +1,60 @@
+{
+  "name": "o1js-gcd",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "license": "Apache-2.0",
+  "keywords": [
+    "mina-zkapp",
+    "mina-zk-app",
+    "mina-dapp",
+    "zkapp",
+    "gcd",
+    "bigint",
+    "zk",
+    "zkSNARK",
+    "zero knowledge"
+  ],
+  "contributors": [
+    {
+      "name": "Gregor Mitscha-Baude",
+      "githubUsername": "mitschabaude",
+      "url": "https://plusepsilon.com/"
+    },
+    {
+      "name": "Mahmoud Kaffel",
+      "githubUsername": "Shigoto-dev19",
+      "url": "https://github.com/Shigoto-dev19"
+    },
+    {
+      "name": "Paima Studios",
+      "url": "https://github.com/PaimaStudios"
+    }
+  ],
+  "type": "module",
+  "main": "build/src/index.js",
+  "types": "build/src/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "buildw": "tsc --watch",
+    "format": "prettier --write --ignore-unknown **/*",
+    "lint": "npx eslint src/* --fix",
+    "runner": "npm run build && node build/src/run.js"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-typescript": "^7.24.7",
+    "@types/jest": "^29.5.12",
+    "@typescript-eslint/eslint-plugin": "^8.3.0",
+    "@typescript-eslint/parser": "^8.3.0",
+    "eslint": "^9.9.1",
+    "eslint-plugin-o1js": "^0.4.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.3.3",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.5.4"
+  },
+  "peerDependencies": {
+    "o1js": "1.6.0"
+  }
+}
